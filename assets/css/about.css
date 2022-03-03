@@ -1,0 +1,102 @@
+#about-us{
+    width: 100%;
+    height: 75vh;
+  
+}
+.content__about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5% 2.5% 2.5% 2.5% ;
+
+
+}
+.content__about .image-side{
+    width: 35%;
+    height: 80%;
+    position: relative;
+    border: 1rem solid #00a24e;
+}
+.content__about .image-side .image{
+    position: absolute;
+    background-image: url(../images/laying__bricks.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    left: 20%;
+    top:-15%
+}
+.history{
+    width: 75%;
+    height: 100%;
+    padding:5% 5% 5% 20%;
+}
+.infor{
+    width: 100%;
+    height: 100%;
+    
+}
+.infor h4{
+    color: #00a24e;
+    font-family: "Montserrat Bold";
+}
+.infor p{
+    color: rgb(71, 71, 71);
+    font-family: "Montserrat";
+}
+
+@media (max-width:942px) {
+    #about-us{
+        height: fit-content;
+    }
+    .content__about{
+        display: flex ;
+        flex-direction: column;
+    }
+
+    .content__about .image-side{
+        width: 50%;
+        height: 500px;
+    }
+}
+@media (max-width:720px) {
+    .content__about .image-side{
+        width: 100%;
+    }
+    .content__about .image-side .image{
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+    }
+}
+@media (max-width:660px) {
+    .history{
+        width: 100%;
+        padding:5% 5% 5% 5%;
+    }   
+}
+.body__para{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body__para p{
+    display: flex;
+    text-align: center;
+    margin-inline: 30px;
+}
+@media (max-width:480px) {
+    .body__para{    
+        justify-content: unset;
+        align-items: unset;   
+    }
+
+    .body__para p {
+        margin-inline: 5%;
+        text-align: unset;
+    }
+}

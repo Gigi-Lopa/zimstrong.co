@@ -1,0 +1,120 @@
+#contact-us{
+    height: 135vh;
+    width: 100%;
+}
+.content{
+   
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+.content .form-section,
+.content .company-infor{
+    padding: 5%;
+    width: 50%;
+    height: 100%;
+}
+.form-section .heading h5{
+    font-family: "Montserrat Bold";
+    color: #00a24e;
+    font-size: 2rem;
+}
+.form{
+    margin-top: 50px;
+}
+.top-row{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.content input,
+textarea{
+    padding: 5% 0% 5% 10%;
+    background-color: rgb(233, 229, 229);
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+.content input:focus,
+textarea:focus{
+    border: 1px solid gray;
+}
+textarea{
+    width: 100%;
+}
+.last-child{
+    margin-left: 25px;
+}
+.submit{
+    background-color: #00a24e;
+    color: white;
+    width: 150px;
+    padding: 2.5%;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.submit:hover{
+    background-color: #00a282;
+}
+label{
+    font-family: "Montserrat Bold";
+    font-weight: 300;
+    color: rgb(148, 147, 147);
+}
+.company-infor{
+    margin-top: 10%;
+} 
+.company-infor p{
+    margin: 0;
+    font-family: "Montserrat";
+}
+.company-infor h5{
+    font-family: "Montserrat Bold";
+    color: #00a24e;
+}
+.company-infor .col{
+    margin-bottom: 5%;
+}
+.company-infor .col a{
+    text-decoration: none;
+    color: #212529;
+}
+.company-infor span{
+    font-size: 1.5rem;
+}
+@media (max-width:873px) {
+    #contact-us{
+        height: fit-content;
+        width: 100%;
+    }
+    .content{
+       
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content .form-section,
+    .content .company-infor{
+    padding: 5%;
+    height: 50%;
+    width: 100%;
+}
+
+}
+@media (max-width:480px) {
+    .content input{
+        width: 100%;
+    }
+    .top-row{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }       
+    .last-child{
+        margin-top: 25px;
+        margin-left: 0;
+    }
+}
